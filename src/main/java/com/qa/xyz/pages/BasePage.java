@@ -30,9 +30,12 @@ public class BasePage {
 		if (browserName.equals("chrome")) {
 			System.setProperty("webdriver.chrome.driver", "/Users/NaveenKhunteta/Downloads/chromedriver");
 			driver = new ChromeDriver();
+			System.out.println("chrome is launched");
 		}else if(browserName.equals("firefox")){
 			System.setProperty("webdriver.gecko.driver", "/Users/NaveenKhunteta/Downloads/geckodriver");
 			driver = new FirefoxDriver();
+			System.out.println("firefox is launched");
+
 		}
 
 		driver.manage().timeouts().pageLoadTimeout(Constants.PAGE_LOAD_TIME_OUT, TimeUnit.SECONDS);

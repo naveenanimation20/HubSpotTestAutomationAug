@@ -32,7 +32,7 @@ public class LoginPage extends BasePage{
 		username.sendKeys(userName);
 		password.sendKeys(pwd);
 		loginBtn.click();
-		
+		System.out.println("login is done");
 		return new HomePage(driver);
 	}
 	
