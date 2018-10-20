@@ -28,8 +28,7 @@ public class BasePage {
 
 		browserName = prop.getProperty("browser");
 		if (browserName.equals("chrome")) {
-			System.setProperty("webdriver.chrome.driver", 
-					System.getProperty("user.dir")+"/src/main/resources/drivers/chromedriver");
+			System.setProperty("webdriver.chrome.driver", "drivers/chromedriver");
 			driver = new ChromeDriver();
 			System.out.println("chrome is launched");
 		}else if(browserName.equals("firefox")){
