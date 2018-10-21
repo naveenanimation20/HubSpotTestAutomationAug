@@ -10,10 +10,11 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
-import org.openqa.selenium.support.events.WebDriverEventListener;
 
 import com.qa.xyz.listener.WebEventListener;
 import com.qa.xyz.util.Constants;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BasePage {
 
@@ -28,13 +29,15 @@ public class BasePage {
 
 		browserName = prop.getProperty("browser");
 		if (browserName.equals("chrome")) {
-			System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+ 
-					"/src/main/resources/drivers/geckodriver");
+//			System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+ 
+//					"/src/main/resources/drivers/geckodriver");
+			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
 			System.out.println("chrome is launched");
 		}else if(browserName.equals("firefox")){
-			System.setProperty("webdriver.gecko.driver", 
-					System.getProperty("user.dir")+"/src/main/resources/drivers/geckodriver");
+//			System.setProperty("webdriver.gecko.driver", 
+//					System.getProperty("user.dir")+"/src/main/resources/drivers/geckodriver");
+			WebDriverManager.firefoxdriver().setup();
 			driver = new FirefoxDriver();
 			System.out.println("firefox is launched");
 
