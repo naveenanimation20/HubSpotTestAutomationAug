@@ -31,7 +31,7 @@ public class BasePage {
 		if (browserName.equals("chrome")) {
 //			System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+ 
 //					"/src/main/resources/drivers/geckodriver");
-			WebDriverManager.chromedriver().setup();
+			WebDriverManager.chromedriver().version("2.43").setup();	
 			driver = new ChromeDriver();
 			System.out.println("chrome is launched");
 		}else if(browserName.equals("firefox")){
