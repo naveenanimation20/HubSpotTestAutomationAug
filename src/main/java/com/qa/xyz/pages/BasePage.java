@@ -28,12 +28,13 @@ public class BasePage {
 
 		browserName = prop.getProperty("browser");
 		if (browserName.equals("chrome")) {
-			System.setProperty("webdriver.chrome.driver", "drivers/chromedriver");
+			System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+ 
+					"/src/main/resources/drivers/geckodriver");
 			driver = new ChromeDriver();
 			System.out.println("chrome is launched");
 		}else if(browserName.equals("firefox")){
 			System.setProperty("webdriver.gecko.driver", 
-					System.getProperty("user.dir")+"/src/main/resources/drivers/chromedriver");
+					System.getProperty("user.dir")+"/src/main/resources/drivers/geckodriver");
 			driver = new FirefoxDriver();
 			System.out.println("firefox is launched");
 
