@@ -15,6 +15,9 @@ import com.qa.xyz.listener.WebEventListener;
 import com.qa.xyz.util.Constants;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import io.github.bonigarcia.wdm.ChromeDriverManager;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 public class BasePage {
 
@@ -29,9 +32,9 @@ public class BasePage {
 
 		browserName = prop.getProperty("browser");
 		if (browserName.equals("chrome")) {
-//			System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+ 
-//					"/src/main/resources/drivers/geckodriver");
-			WebDriverManager.chromedriver().version("2.43").setup();	
+			System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+ 
+					"/src/main/resources/drivers/geckodriver");
+			//ChromeDriverManager.chromedriver().version("2.43").setup();	
 			driver = new ChromeDriver();
 			System.out.println("chrome is launched");
 		}else if(browserName.equals("firefox")){

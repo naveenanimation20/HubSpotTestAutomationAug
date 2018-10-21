@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="2" total="3" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="5754" started-at="2018-10-21T13:35:21Z" finished-at="2018-10-21T13:35:27Z">
+  <suite name="Default suite" duration-ms="5516" started-at="2018-10-21T13:40:39Z" finished-at="2018-10-21T13:40:44Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="5754" started-at="2018-10-21T13:35:21Z" finished-at="2018-10-21T13:35:27Z">
+    <test name="Default test" duration-ms="5516" started-at="2018-10-21T13:40:39Z" finished-at="2018-10-21T13:40:44Z">
       <class name="com.qa.xyz.tests.LoginTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.xyz.tests.LoginTest@7cbd213e]" name="setUp" is-config="true" duration-ms="5588" started-at="2018-10-21T13:35:22Z" finished-at="2018-10-21T13:35:27Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.xyz.tests.LoginTest@7cbd213e]" name="setUp" is-config="true" duration-ms="5384" started-at="2018-10-21T13:40:39Z" finished-at="2018-10-21T13:40:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyLoginPageTitle()[pri:1, instance:com.qa.xyz.tests.LoginTest@7cbd213e]" name="verifyLoginPageTitle" duration-ms="31" started-at="2018-10-21T13:35:27Z" finished-at="2018-10-21T13:35:27Z">
+        <test-method status="PASS" signature="verifyLoginPageTitle()[pri:1, instance:com.qa.xyz.tests.LoginTest@7cbd213e]" name="verifyLoginPageTitle" duration-ms="13" started-at="2018-10-21T13:40:44Z" finished-at="2018-10-21T13:40:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginPageTitle -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.xyz.tests.LoginTest@7cbd213e]" name="tearDown" is-config="true" duration-ms="109" started-at="2018-10-21T13:35:27Z" finished-at="2018-10-21T13:35:27Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.xyz.tests.LoginTest@7cbd213e]" name="tearDown" is-config="true" duration-ms="98" started-at="2018-10-21T13:40:44Z" finished-at="2018-10-21T13:40:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
